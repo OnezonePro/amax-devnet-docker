@@ -41,3 +41,10 @@ unzip amax.cdt.zip
 # 查看amax-cpp版本
 amax-cpp --version
 # amax-cpp version 1.7.6
+
+# 发布镜像到hub.docker
+# docker commit --message "amax-devnet v1.1.0" 镜像id hub500/amaxdevnet:1.1.0
+# docker commit --message "amax-devnet v1.1.0" 7d6c7eccb508 hub500/amaxdevnet:1.1.0
+
+# 运行amax开发环境
+# docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.1.0
