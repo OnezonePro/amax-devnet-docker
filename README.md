@@ -38,3 +38,22 @@ v0.5.2
 
 <img width="1093" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/9a8eb5f3-438e-4c1d-a951-34cb52718426">
 
+### 安装配置vscode开发环境
+
+* 安装 docker 插件
+
+<img width="329" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/819cd764-facb-4180-a0b1-029bb5d4d5d3">
+
+* 安装 remote 远程桌面
+
+<img width="325" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/cb754397-992d-4edc-9ea2-23c0fd326923">
+
+* 打开并进入 amax devnet 容程开发合约
+ 
+<img width="634" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/0a87cade-dc99-4acb-8f4c-d384dbe92b8c">
+
+<img width="1077" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/2f326162-3c0e-4190-8e26-e543c2ed7e62">
+
+<img width="1002" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/63fb1127-b933-4e1f-9acd-3313dcfb9da0">
+
+
