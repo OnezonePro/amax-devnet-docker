@@ -1,9 +1,12 @@
 
+
 # download amax.cdt.zip
 # mv ~/amax.cdt.zip /usr/local
 # unzip amax.cdt.zip
 
 # Execute the following command
+
+# 如果Python3手工升级过，必须重新 创建新的软链接到可执行文件
 
 cd /usr/local/bin
 
