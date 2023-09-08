@@ -85,6 +85,8 @@ v0.5.2
 
 <img width="719" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/449754af-d8b5-453c-bf39-79003e90bdef">
 
+<img width="1440" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/6a31fec0-2b18-4c1d-9ed2-83a2d18f5315">
+
 ### 运行测试用例
 
 > python3 test_nftone_xdao.py
@@ -96,3 +98,4 @@ v0.5.2
 <img width="1440" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/33d9e0d0-ee30-4592-97ee-7b21cfcda4da">
 
 完成本地开发环境及全流程的测试
+
