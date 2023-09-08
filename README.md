@@ -4,7 +4,7 @@
 
 * 运行开发环境
   
-> docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.1.0
+> docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.2.0
 
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
 8dffcf5633574b656dd5de06125ab014c90902ba811a4d9f5d07c6a76241c1a2
