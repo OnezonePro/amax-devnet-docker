@@ -15,7 +15,7 @@ WARNING: The requested image's platform (linux/amd64) does not match the detecte
 
 ```
 CONTAINER ID   IMAGE                     COMMAND           CREATED         STATUS         PORTS                NAMES
-8dffcf563357   hub500/amaxdevnet:1.1.0   "/sbin/my_init"   6 seconds ago   Up 5 seconds   0.0.0.0:22->22/tcp   amax-devnet1
+8dffcf563357   hub500/amaxdevnet:1.2.0   "/sbin/my_init"   6 seconds ago   Up 5 seconds   0.0.0.0:22->22/tcp   amax-devnet1
 ```
 
 * 进入容器
