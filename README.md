@@ -58,7 +58,8 @@ v0.5.2
 <img width="1002" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/63fb1127-b933-4e1f-9acd-3313dcfb9da0">
 
 * 下载测试合约源码压缩包
-  
+
+<img width="620" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/e24a92aa-f3db-4edc-8486-9fb158f31dbd">
 
 * 本地解压后 复制上传到窗器中
 
