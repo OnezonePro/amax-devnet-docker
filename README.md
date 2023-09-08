@@ -1,5 +1,6 @@
 # amax-devnet-docker
-amax devnet docker
+
+### 本地安装 amax-devnet开发环境
 
 * 运行开发环境
   
@@ -63,14 +64,19 @@ v0.5.2
 
 <img width="558" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/2d39fb82-f580-4267-8305-03702ea1e51c">
 
-* 编译测试示例合约
+### 编译测试示例合约
 
-  <img width="947" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/f981c024-130f-4682-bd8a-0219648961c8">
-  <img width="733" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/04944ae3-9bd7-4739-b360-b06f6f7b2305">
+> chmod +x ./build.sh
 
+<img width="947" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/f981c024-130f-4682-bd8a-0219648961c8">
+
+> bash ./build.sh
+
+<img width="733" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/04944ae3-9bd7-4739-b360-b06f6f7b2305">
+
+* 【可选】安装Python 测试插件
+  
 <img width="1223" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/6a1cf5ef-e470-447b-abb3-054f588df9cf">
-
-
 
 <img width="708" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/7bebea92-38df-4941-89a6-293c3e414ebf">
 
@@ -78,11 +84,14 @@ v0.5.2
 
 <img width="719" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/449754af-d8b5-453c-bf39-79003e90bdef">
 
+### 运行测试用例
+
+> python3 test_nftone_xdao.py
+ 
 <img width="1440" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/f05e192c-5565-45a1-b6f6-7364201743a7">
+
+最终运行结果如下
 
 <img width="1440" alt="image" src="https://github.com/OnezonePro/amax-devnet-docker/assets/80018598/33d9e0d0-ee30-4592-97ee-7b21cfcda4da">
 
-
-
-
-
+完成本地开发环境及全流程的测试
