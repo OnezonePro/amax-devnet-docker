@@ -15,6 +15,12 @@ docker exec -it amax-devnet /bin/bash
 python3 --version
 # Python 3.6.9
 
+# https://cloud.tencent.com/developer/article/1626765
+# 升级到 Python 3.8
+apt install software-properties-common
+add-apt-repository ppa:deadsnakes/ppa
+apt install python3.8
+
 # 查看amnod版本
 amnod --version
 # v0.5.2
