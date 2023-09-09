@@ -1,10 +1,13 @@
 # amax-devnet-docker
 
+
 ### 本地安装 amax-devnet开发环境
+
+[注意] 已发布最新1.3.0版本
 
 * 运行开发环境
   
-> docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.2.0
+> docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.3.0
 
 WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
 8dffcf5633574b656dd5de06125ab014c90902ba811a4d9f5d07c6a76241c1a2
@@ -15,7 +18,7 @@ WARNING: The requested image's platform (linux/amd64) does not match the detecte
 
 ```
 CONTAINER ID   IMAGE                     COMMAND           CREATED         STATUS         PORTS                NAMES
-8dffcf563357   hub500/amaxdevnet:1.2.0   "/sbin/my_init"   6 seconds ago   Up 5 seconds   0.0.0.0:22->22/tcp   amax-devnet1
+8dffcf563357   hub500/amaxdevnet:1.3.0   "/sbin/my_init"   6 seconds ago   Up 5 seconds   0.0.0.0:22->22/tcp   amax-devnet1
 ```
 
 * 进入容器
