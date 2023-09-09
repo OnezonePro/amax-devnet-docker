@@ -17,31 +17,40 @@ python3 --version
 
 # https://cloud.tencent.com/developer/article/1626765
 # 升级到 Python 3.8
-apt install software-properties-common
-add-apt-repository ppa:deadsnakes/ppa
-apt install python3.8
+apt install -y software-properties-common
+add-apt-repository universe
+
+# 更新软件源
+apt update
+# 升级软件包
+apt upgrade
+
+# 安装python3
+apt install -y python3.8
+# 安装pip3
+apt install -y python3-pip
+
+# 安装cmake
+apt install -y wget cmake unzip zip
+
+# 配置默认为 python3.8
+cd /usr/bin
+rm python3
+ln -s ./python3.8 ./python3
+python3 --version
+# Python 3.8.0
 
 # 查看amnod版本
 amnod --version
 # v0.5.2
 
-# 更新软件源
-apt update
-
-# 升级软件包
-apt upgrade
-
-# 安装pip3
-apt install python3-pip
-
-# 安装cmake
-apt install wget cmake
-
 # 下载 amax.cdt.zip
+cd ~
 wget https://github.com/OnezonePro/amax-devnet-docker/raw/main/amax.cdt.zip
 
 # 解压到 /usr/local
 mv ~/amax.cdt.zip /usr/local
+cd /usr/local
 unzip amax.cdt.zip
 
 # 查看amax-cpp版本
@@ -49,8 +58,15 @@ amax-cpp --version
 # amax-cpp version 1.7.6
 
 # 发布镜像到hub.docker
-# docker commit --message "amax-devnet v1.1.0" 镜像id hub500/amaxdevnet:1.1.0
-# docker commit --message "amax-devnet v1.1.0" 7d6c7eccb508 hub500/amaxdevnet:1.1.0
+# docker commit --message "amax-devnet v1.3.0" 镜像id hub500/amaxdevnet:1.3.0
+# docker commit --message "amax-devnet v1.3.0" 7d6c7eccb508 hub500/amaxdevnet:1.3.0
 
 # 运行amax开发环境
-# docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.1.0
+# docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.3.0
+
+# amaxfactory 配置
+# [config]
+# FACTORY_DIR = /opt/amax/amaxfactory
+# WALLET_DIR = /root/amax-wallet
+# AMAX_DIR = /usr/opt/amax/0.5.2
+# CONTRACT_WORKSPACE = /root/contracts
