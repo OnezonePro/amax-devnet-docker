@@ -26,7 +26,8 @@ apt update
 apt upgrade
 
 # 安装python3
-apt install -y python3.8
+apt install -y python3.8 python3.8-dev
+
 # 安装pip3
 apt install -y python3-pip
 
