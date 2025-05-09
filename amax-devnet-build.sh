@@ -58,12 +58,42 @@ unzip amax.cdt.zip
 amax-cpp --version
 # amax-cpp version 1.7.6
 
+# vscode最新版本要求glibc2.28以上
+# https://blog.csdn.net/weixin_42466834/article/details/135958841
+
+# 添加源
+vi /etc/apt/sources.list
+deb http://security.debian.org/debian-security buster/updates main
+
+# 安装libc6
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A 54404762BBB6E853
+apt-get update
+apt list --upgradable
+apt install libc6 libc6-dev
+
+# 安装amaxfactory
+cd /opt/amax
+wget https://github.com/OnezonePro/amax-devnet-docker/blob/main/amaxfactory.zip
+unzip amaxfactory.zip
+
+# 修改 amaxfactory/config/config.ini 文件
+[config]
+FACTORY_DIR = /opt/amax/amaxfactory
+WALLET_DIR = /root/amax-wallet
+AMAX_DIR = /usr/opt/amax/1.0.3
+CONTRACT_WORKSPACE = /root/contracts
+
+# 安装amaxfactory
+bash install.sh
+# 最后设置合约目录为 /root/contracts
+
+
 # 发布镜像到hub.docker
-# docker commit --message "amax-devnet v1.4.0" 镜像id hub500/amaxdevnet:1.4.0
-# docker commit --message "amax-devnet v1.4.0" 7d6c7eccb508 hub500/amaxdevnet:1.4.0
+# docker commit --message "amax-devnet v1.5.0" 镜像id hub500/amaxdevnet:1.5.0
+# docker commit --message "amax-devnet v1.5.0" 7d6c7eccb508 hub500/amaxdevnet:1.5.0
 
 # 运行amax开发环境
-# docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.4.0
+# docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.5.0
 
 # amaxfactory 配置
 # [config]
