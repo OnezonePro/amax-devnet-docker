@@ -1,9 +1,9 @@
 
-# 下载 amnod:0.5.2 镜像
-docker pull armoniax/amnod:0.5.2
+# 下载 amnod:1.0.3 镜像
+docker pull armoniax/amnod:1.0.3
 
 # 运行节点
-docker run -itd -p 22:22 -v ~/contracts:/root/contracts --workdir=/root/contracts --name=amax-devnet armoniax/amnod:0.5.2
+docker run -itd -p 22:22 -v ~/contracts:/root/contracts --workdir=/root/contracts --name=amax-devnet armoniax/amnod:1.0.3
 
 # 查看镜像列表
 docker ps
@@ -42,7 +42,7 @@ python3 --version
 
 # 查看amnod版本
 amnod --version
-# v0.5.2
+# v1.0.3
 
 # 下载 amax.cdt.zip
 cd ~
@@ -58,15 +58,15 @@ amax-cpp --version
 # amax-cpp version 1.7.6
 
 # 发布镜像到hub.docker
-# docker commit --message "amax-devnet v1.3.0" 镜像id hub500/amaxdevnet:1.3.0
-# docker commit --message "amax-devnet v1.3.0" 7d6c7eccb508 hub500/amaxdevnet:1.3.0
+# docker commit --message "amax-devnet v1.4.0" 镜像id hub500/amaxdevnet:1.4.0
+# docker commit --message "amax-devnet v1.4.0" 7d6c7eccb508 hub500/amaxdevnet:1.4.0
 
 # 运行amax开发环境
-# docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.3.0
+# docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.4.0
 
 # amaxfactory 配置
 # [config]
 # FACTORY_DIR = /opt/amax/amaxfactory
 # WALLET_DIR = /root/amax-wallet
-# AMAX_DIR = /usr/opt/amax/0.5.2
+# AMAX_DIR = /usr/opt/amax/1.0.3
 # CONTRACT_WORKSPACE = /root/contracts
