@@ -3,14 +3,19 @@
 
 ### 本地安装 amax-devnet开发环境
 
-[注意] 已发布最新1.3.0版本
+[注意] 已发布最新1.5.0版本
 
 * 运行开发环境
   
-> docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.3.0
+> docker run -itd -p 22:22 --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.5.0
 
-WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
-8dffcf5633574b656dd5de06125ab014c90902ba811a4d9f5d07c6a76241c1a2
+* 运行开发环境并指定本地目录映射(推荐)
+
+> docker run -itd -p 22:22 -v ~/contracts:/root/contracts --workdir=/root/contracts --name=amax-devnet1 hub500/amaxdevnet:1.5.0
+
+本地目录映射后，在本地目录 ~/contracts 中开发合约，编译测试是通过amaxdevent1.5.0 docker来完成的，不需要本地安装amax-cpp和amnod开发工具
+
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/dfc7c51b-472f-4ee8-a75f-5b946f868852" />
 
 * 查看容器列表
   
